@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="favicon.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Porfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" aria-current="page" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#lofi">Final Wireframe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#hifi">Hi-Fi Mockup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#critiques">Critiques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#testing">User Testing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-4">
+
+    <!-- CITATION: JUMBOTRON EXAMPLE FROM https://getbootstrap.com/docs/5.0/examples/#custom-components -->
+    <div class="p-5 mb-4 dark-bg rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold" style="color: white">Porfolio</h1>
+        <p class="col-md-8 fs-4" style="color: white">SUBTEXT</p>
+      </div>
+    </div>
+
+    <!-- Sections: Introduction, Hacker News Website, Issues Here, Issues There, Issues Everywhere!, Lo-Fi Wireframes, Style Guide, Hi-Fi Prototypes, Hacker News: Redesigned, Conclusion -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3 id="introduction" class="pb-4 mb-4 border-bottom">
+          Introduction
+        </h3>
+
+        <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
+        <div class="row">
+          <div class="col-md-6 col-6">
+            <!-- make clicking image open site, on hover make it expand -->
+            <a href="https://news.ycombinator.com/">
+              <img class="site img-fluid" src="site-screenshot.png" alt="Hacker News Website">
+            </a>
+          </div>
+          <div class="col-md-6 col-6">
+            <h4 class="pb-2 mb-2">Background</h4>
+            <p> I am a college junior studying computer science. I took a UI/UX in order to learn about different aspects of CS than those
+              covered in the classes I have taken thus far. Additionally, ever since I was little, I have loved to bake. Therefore, as I 
+              learned about the different aspects of UI/UX work, I decided to focus my projects on topics related to the different 
+              aspects of baking in college: buying ingredients, finding recipes, managing a budget and splitting costs with friends, 
+              and potentially selling baked goods to others. 
+              <!-- Therefore, for my portfolio I decided to focus on
+              projects related to
+              SOMETHING ABOUT HELPING OTHER BAKERS. When baking (especially when I am at college), buying ingredients
+              and choosing recipes
+              that I have time to make are SOMETHING, so my first two projects focus on these topcis/ISSUES?. Before
+              coming to college, I
+              was starting to think about selling some of the baked goods I made, but didn't know how to spread the
+              word/provide information
+              about what I was making, -->
+            </p>
+          </div>
+        </div>
+
+        <!-- Create a new section titled sketches and then add the sketches-->
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="projects" class="pb-4 mb-4 border-bottom">
+              Projects
+            </h2>
+            <p>For my projects, I decided to focus on issues/question that other home bakers and I often have when
+              baking. These are divided intro
+              the following categories:
+              <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+              <span class="topic" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Where can I efficiently buy ingredients? How can I make sure I stay within budget?">ingredients,</span>
+              <span class="topic" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="How do I choose recipes that fit the time I have available? How do I dealwith dietary constraints?">choosing
+                recipes,</span>
+                <span class="topic" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="How can I manage my budget? How can I efficiently split costs with friends?">managing a budget,</span> and 
+              <span class="topic" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Suppose I want to sell what I make, how do I tell people about what I make?">selling baked
+                goods.</span>
+
+              <b>Hover over these topics to see more specific questions</b>
+            </p>
+
+            <p>Keeping these topics terms in mind, the following are the four projects I have worked on related to
+              investigating them further and providing some potential answers:
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card dark-bg h-100 ">
+                  <div class="card-body">
+                    <!-- <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fas fa-brain"></i></button> -->
+                    <h3>Purchasing Ingredients:</h3>
+                    <p class="card-text">As a college student, I often buy ingredients at CVS. It is reletively cheap,
+                      thus helping me stay within budget. More importantly it is very conviently located and doesn't require 
+                      prior planning to go to, allowing me and my friends to spontaneously decide to bake something when we want to 
+                      without having to worry about not having a lot of time to buy ingredients.
+                    </p>
+                    <p class="card-text"> However, one issue with CVS is the checkout machine, which is often quite slow
+                      and finicky. Therefore, this first project uses personas and storyboarding to investigate experiences and 
+                      common issues that various users have while interacting with said machine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card dark-bg h-100">
+                  <div class="card-body">
+                    <!-- <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fas fa-font"></i></button> -->
+                    <h3>Choosing Recipes</h3>
+                    <p class="card-text">Another common issue that faced by me and my other friends who like to bake is choosing recipes that 
+                      fit the amount of time we have, as well as finding recipes that are work for people with dietary restrictions, such as
+                      those who are gluten free or lcatose intolerant. Therefore, when we learned about developing webapps,I decided to design
+                      one that allows users to filter and sort recipes based on cooktime and dietary restrictions, thus helping them find 
+                      recipes that fit whatever constraints they might have.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card dark-bg h-100 mt-3">
+                  <div class="card-body">
+                    <!-- <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fas fa-sitemap"></i></button> -->
+                    <h4>Managing a Budget and Splitting Costs</h4>
+                    <p class="card-text">Another concern for college bakers (and really college students in general) is managing budgets and
+                      splitting the cost of things with friends. For example, when my friends and I bake together, it is often hard to coordinate
+                      who is paying for which ingredients. Therefore, for iterative design, my group decided to work on a prototype of an app
+                      for a startup called Orca, which is focused on providing one location where gen Z users can manage their budgets, pay friends,
+                      split checks, etc. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card dark-bg h-100" , style="margin-top: 1vw">
+                  <div class="card-body">
+                    <!-- <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fas fa-lightbulb"></i></button> -->
+                    <h4>Selling Products</h4>
+                    <p class="card-text">Finally, SOMETHING ABOUT SELLING STUFF.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lo-Fi Wireframes: add text description then in one column is Image with Caption, then other column is accordion -->
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h3 id="lofi" class="pb-4 mb-4 border-bottom">
+            Final Wireframe
+          </h3>
+          <p>With these issues guiding the redesign, the following are Lofi Wireframes to solve these issues and
+            overall <b>create a more pleasant reading experience for everyone.</b></p>
+          <p>Each wireframe is annotated with how each section solves the aforementioned usability issues!</p>
+        </div>
+
+        <!-- CITATION: Figures https://getbootstrap.com/docs/5.0/content/figures/ -->
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="Desktop.png" class="figure-img img-fluid rounded" alt="Desktop Lo-Fi">
+            <figcaption class="figure-caption">Desktop Lo-Fi</figcaption>
+          </figure>
+        </div>
+
+        <!-- CITATION: ACCORDION https://getbootstrap.com/docs/5.0/components/accordion/ -->
+        <div class="col-md-6">
+          <div class="accordion" id="lofi">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  #1 Search Bar
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  The search bar is no longer in the footer, and is now immediately visible and takes up a large
+                  part of the Navbar. The user no longer needs to scroll down to the footer to search.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  #2 Login Button
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  There is now a clear “Call-To-Action” that prompts the user to login in the header with a large,
+                  orange button. It no longer is hard to read and is kept in a nook in the corner of the Navbar.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  #3 Jobs Board
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  Hacker News also aims to bring attention and support to Y Combinator’s startups. It has new jobs
+                  each day, and thus deserves one of the primary spots in the Visual Hierarchy. This board surfaces
+                  those opportunities and each job is hoverable and navigates to the job post. Both the Jobs header
+                  and more buttons are also clickable and will change color on hover!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  #4 Filters
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  The website now communicates that the user defaults to looking at the <b>top</b> posts when they
+                  first arrive at the site. It also becomes clear <b>what</b> the filtering options are for the
+                  submissions instead of being bundled with other options in the Navbar.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  #5 New Submission
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  There is now a clear “Call-to-Action” to create new submissions on the platform. Before, the
+                  button “submit” looked as if it navigates to another page with new content, but now this button
+                  makes it clear that it is for creating new posts.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  #6 Lists
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  Lists: Hacker News also offers the “AskHN” and “ShowHN” post series, as well as surfaces the
+                  site's best comments each day and much more. Previously, the link to see these series was in the
+                  <b>footer</b>. However, it also deserves a higher place in the Visual Hierarchy and links to the
+                  full lists board via the "Lists" header and "more" button.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  #7 New Post Design
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  This new design reimagines the functionality of the original posts. First, each post is separated
+                  to make it easy to determine what contents belong to what posts. From left to right, there is an
+                  easy-to-parse upvote button that highlights on hover, the article name and website link are
+                  clickable to open the URL, and less important information like the user, timestamp, and comment
+                  count is present but not on the same hierarchical level as it was previously.
+
+                  Lastly, a comment icon is added to open the post easier, and the <b>submission itself</b> and
+                  <b>comment button</b> will <b>highlight on hover</b>: so it is clear which post the user is
+                  interacting with!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  #8 Footer
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#lofi">
+                <div class="accordion-body">
+                  Again, there is now a clear “Call-to-Action” to Apply to YC by adding an “Apply” button in the
+                  footer. Further, all of the other low-priority pages are located in the footer and are in a
+                  larger, more discoverable font.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Accordion of 3 items -->
+        <div class="col-md-6">
+          <div class="accordion" id="lftab">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOnelftab" aria-expanded="true" aria-controls="collapseOne">
+                  #1 Search and List Icons
+                </button>
+              </h2>
+              <div id="collapseOnelftab" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#lftab">
+                <div class="accordion-body">
+                  As the viewport is smaller, the search bar shrinks to a search icon. The List Board also becomes a
+                  button in the Navbar that links to the Lists page. On a smaller screen, the user can easily
+                  navigate to the List of topics with this button, rather than scrolling down the List board.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwolftab" aria-expanded="false" aria-controls="collapseTwo">
+                  #2 Column Rearrangement
+                </button>
+              </h2>
+              <div id="collapseTwolftab" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#lftab">
+                <div class="accordion-body">
+                  To prioritize new content that is surfaced to the site, the two primary columns are the Jobs Board
+                  and the Feed (the Lists board is static and thus becomes a button in the Navar). The content
+                  shifts in that the feed takes up 80% of the column width (about 9 columns) while the Job board
+                  takes up the remaining 20% (about 3 columns). Further, the links in the Job Board disappear, but
+                  the Job name and caption grow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThreelftab" aria-expanded="false" aria-controls="collapseThree">
+                  #3 Footer
+                </button>
+              </h2>
+              <div id="collapseThreelftab" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#lftab">
+                <div class="accordion-body">
+                  The footer content still has the application prompt floating left and the miscellaneous pages
+                  floating right, but becomes slightly larger on the Tablet for accessibility purposes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="Tablet.png" class="figure-img img-fluid rounded" alt="Tablet Lo-Fi">
+            <figcaption class="figure-caption">Tablet Lo-Fi</figcaption>
+          </figure>
+        </div>
+
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="Mobile.png" class="figure-img img-fluid rounded" alt="Mobile Lo-Fi">
+            <figcaption class="figure-caption">Mobile Lo-Fi</figcaption>
+          </figure>
+        </div>
+
+        <div class="col-md-6">
+          <div class="accordion" id="lfmobile">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOnelfmobile" aria-expanded="true" aria-controls="collapseOne">
+                  #1 Feed Prioritization
+                </button>
+              </h2>
+              <div id="collapseOnelfmobile" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#lfmobile">
+                <div class="accordion-body">
+                  All the content now takes up one column for the user to scroll through. As the Feed is the primary
+                  component, it becomes the first element to float to the top.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwolfmobile" aria-expanded="false" aria-controls="collapseTwo">
+                  #2 Lists and Jobs Board
+                </button>
+              </h2>
+              <div id="collapseTwolfmobile" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#lfmobile">
+                <div class="accordion-body">
+                  The Lists Board and Jobs Board follow the Feed, with the Lists coming first and then the Jobs.
+                  This keeps the users engaged after scrolling through the first ten submissions.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThreelfmobile" aria-expanded="false" aria-controls="collapseThree">
+                  #3 Jobs
+                </button>
+              </h2>
+              <div id="collapseThreelfmobile" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#lfmobile">
+                <div class="accordion-body">
+                  The links to each startup site reappear again and float right to take up more of the screen real
+                  estate (and make it accessible to click with the right thumb).
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFourlfmobile" aria-expanded="false" aria-controls="collapseFour">
+                  #4 Footer
+                </button>
+              </h2>
+              <div id="collapseFourlfmobile" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#lfmobile">
+                <div class="accordion-body">
+                  The footer content now stacks on top of each other: effectively making the footer larger but
+                  dividing the “apply” and the “miscellaneous” sections for hierarchy purposes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h3 class="pb-4 mb-4 border-bottom">
+            Visual Design Style Guide
+          </h3>
+          <p>Next up is the Visual Design Style Guide! It contains the components and styles for the website to make
+            a clean UX. For this redesign, as well, we are going <b>Dark Mode!</b></p>
+          <p>Dark mode doesn't directly reduce eye strain, but it can offer some relief and makes it easier to read
+            in light. It is no mystery why more and more sites adopt dark mode: users love it!</p>
+        </div>
+
+        <!-- CITATION: Figures https://getbootstrap.com/docs/5.0/content/figures/ -->
+        <div class="col-md-12">
+          <figure class="figure">
+            <img src="Style.png" class="figure-img img-fluid rounded" alt="Style Guide">
+            <figcaption class="figure-caption">Style Guide</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h3 class="pb-4 mb-4 border-bottom">
+            Hi-Fi Prototype
+          </h3>
+          <p>After making a LoFi prototype, we moved onto making our HiFi prototype in Figma. This prototype went
+            through a few iterations
+            (especially after incorporating the feedback from studio).
+          </p>
+          <p>Here are some screenshots of the final version and
+            <a
+              href="https://www.figma.com/proto/NqsZsyxxJxA0hLZh2XQWMx/Orca-App-Mockup-(Anonymous)?node-id=1%3A192&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A192">here</a>
+            is the link to see the full prototype!
+          </p>
+        </div>
+
+        <div class="col-md">
+          <div class="accordion" id="hifi">
+            <div class="row d-flex">
+              <div class="col-md-3">
+                <img src="figma.png" class="figure-img img-fluid rounded" alt="home screen">
+              </div>
+              <div class="col-md-3">
+                <img src="figma2.png" class="figure-img img-fluid rounded" alt="split the check screen">
+              </div>
+              <div class="col-md-3">
+                <img src="figma3.png" class="figure-img img-fluid rounded" alt="transactions screen">
+              </div>
+              <div class="col-md-3">
+                <img src="figma4.png" class="figure-img img-fluid rounded" alt="send/request screen">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex" style="justify-content: center; align-items: center;">
+        <div class="col-md-12 mt-5">
+          <h3 id="critiques" class="pb-4 mb-4 border-bottom">
+            Critiques from Studio
+          </h3>
+          <div class="col" style="justify-content: center; align-items: center;">
+            <div class="accordion" id="lofi">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    #1 Feedback about "Split the Check"
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#lofi">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>add a plus button to include the users</li>
+                      <li>fix punctuation and spacing inconsistencies</li>
+                      <li>positive reaction to having access to this feature in the header</li>
+                      <li>fixing margins on second screen</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    #2 Feedback about "Discounts"
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#lofi">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>edit so that map takes up more of the screen</li>
+                      <li>screen is a bit too crowded</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    #3 Feedback about "Add Friends"
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#lofi">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>add title to this page</li>
+                      <li>add button or other affordance to actually add friends</li>
+                      <li>it is currently a bit confusing what the purpose of this page is</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    #4 Feedback about home page
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#lofi">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>add rings for “stories” so look more realistic</li>
+                      <li>story component is a good addition in terms of the social media aspect of the app</li>
+                      <li>make story circles larger</li>
+                      <li>get rid of dollar amount in friends' transactions section</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    #5 Other general feedback
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#lofi">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>on "Discounts" page, add link back to home page </li>
+                      <li>color choice is very good</li>
+                      <li>fix inconsistencies with keyboard appearance between screens</li>
+                      <li>make sure everything is cenetered and/or evenly spaced</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 mt-5">
+        <h3 id="testing" class="pb-4 mb-4 border-bottom">
+          Results from User Testing
+        </h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <h3 id="conclusion" class="pb-4 mb-4 border-bottom">
+            Conclusion
+          </h3>
+          <p>Overall, we turned a seemingly mundane website with lots of valuable content into a modern, readable
+            website! Again, I highly recommend you check out Hacker News to get relevant info on tech and the world!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
